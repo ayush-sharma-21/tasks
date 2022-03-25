@@ -8,11 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString
 @Table("fico_details")
 public class FicoDetails {
 
@@ -27,4 +29,5 @@ public class FicoDetails {
 	private String scoreVersion;
 	@Column("cra")
 	private String cra;
+	
 }
