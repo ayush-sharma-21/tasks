@@ -20,7 +20,7 @@ public class ScoreFactor {
 	@Column("id")
 	private Long id;
 	@Column("tuCode")
-	private int tuCode;
+	private Integer tuCode;
 	@Column("exCode")
 	private int exCode;
 	@Column("reasonStatement")

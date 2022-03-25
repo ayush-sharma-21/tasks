@@ -1,9 +1,15 @@
 package com.lp.creditscore.dto;
 
+import java.util.List;
+import java.util.function.Function;
+
+import com.lp.creditscore.model.ScoreFactor;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import reactor.core.publisher.Flux;
 
 @Data
 @NoArgsConstructor
@@ -12,11 +18,10 @@ import lombok.NoArgsConstructor;
 public class ScoreFactorDto {
 	
 	private Long id;
-    private String tuCode;
-    private String exCode;
-    private String reasonStatement;
-    private String keepInMind;
-    private String fullDescription;
-    private Long ficoId;
-
+	private Long ficoScore;
+    private String creditPullDate;
+    private String scoreVersion;
+    private String cra;
+    private List<ScoreFactor> scoreFactor;
+  
 }
